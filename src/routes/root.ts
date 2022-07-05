@@ -23,6 +23,9 @@ const root: FastifyPluginAsync = async (fastify) => {
     },
     async (request, reply) => {
       const reqBody = request.body;
+
+      await new Promise((resolve) => setTimeout(resolve, 3000)); // wait 3s
+
       const response: PostResponse = {
         comment: `${reqBody.comment}のレスポンス`,
       };
