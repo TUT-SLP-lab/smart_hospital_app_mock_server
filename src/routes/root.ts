@@ -23,7 +23,10 @@ const root: FastifyPluginAsync = async (fastify) => {
     },
     async (request, reply) => {
       const reqBody = request.body;
-      reply.send(reqBody);
+      const response: PostResponse = {
+        comment: `${reqBody.comment}のレスポンス`,
+      };
+      reply.send(response);
     }
   );
 };
