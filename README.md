@@ -1,4 +1,4 @@
-# Dnd Todos Back
+# Smart Hospital Mock Server
 
 - コメントを受け取って返すだけのモックサーバー
 
