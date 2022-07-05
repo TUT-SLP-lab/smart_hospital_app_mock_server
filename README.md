@@ -21,13 +21,7 @@ cp .env.example .env
 yarn
 ```
 
-3. データベースのマイグレーションを行います。
-
-```
-npx prisma migrate dev
-```
-
-4. アプリを立ち上げます。
+3. アプリを立ち上げます。
 
 ```
 yarn dev
